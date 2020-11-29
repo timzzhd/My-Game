@@ -12,15 +12,15 @@ public class PlayerContoller : MonoBehaviour
 
 
     public float horizontalInput;
-    public float speed = 15.0f;
-    public float xRange = 5;
+    public float speed = 10.0f;
+    public float xRange = 10;
     public GameObject projectilePrefab;
 
 
     // Update is called once per frame
     void Update()
     {
-        horizontalInput = Input.GetAxis("Horizontal");
+       float horizontalInput = Input.GetAxis("Horizontal");
         transform.Translate(Vector3.right * horizontalInput * Time.deltaTime * speed);
         if (transform.position.x < xRange)
         {
