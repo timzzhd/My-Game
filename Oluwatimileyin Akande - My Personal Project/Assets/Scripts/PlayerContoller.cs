@@ -11,25 +11,25 @@ public class PlayerContoller : MonoBehaviour
     }
 
 
-    public float horizontalInput;
+    public float verticalInput;
     public float speed = 10.0f;
-    public float xRange = 10;
+    public float yRange = 10;
     public GameObject projectilePrefab;
 
 
     // Update is called once per frame
     void Update()
     {
-       float horizontalInput = Input.GetAxis("Horizontal");
-        transform.Translate(Vector3.right * horizontalInput * Time.deltaTime * speed);
-        if (transform.position.x < xRange)
+        verticalInput = Input.GetAxis("Horizontal");
+        transform.Translate(Vector3.right * verticalInput * Time.deltaTime * speed);
+        if (transform.position.y < yRange)
         {
-            transform.position = new Vector3(xRange, transform.position.y, transform.position.z);
+            transform.position = new Vector3(yRange, transform.position.x, transform.position.z);
 
         }
-        if (transform.position.x > xRange)
+        if (transform.position.y > yRange)
         {
-            transform.position = new Vector3(xRange, transform.position.y, transform.position.z);
+            transform.position = new Vector3(yRange, transform.position.x, transform.position.z);
         }
         if (Input.GetKeyDown(KeyCode.Space))
         {

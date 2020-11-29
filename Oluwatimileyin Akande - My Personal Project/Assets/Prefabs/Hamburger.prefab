@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5187130072658159045}
   - component: {fileID: 4614473168705476700}
   - component: {fileID: -6539951600434164437}
+  - component: {fileID: -2383766119687391959}
   m_Layer: 0
   m_Name: Hamburger
   m_TagString: Untagged
@@ -122,5 +123,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: face78c74b8a1a74f89c53dbd00f8ddd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-2383766119687391959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5187130073757922580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4cbc37e900b400441923a0bebde93b20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
