@@ -11,8 +11,8 @@ public class DestroyOutOfBounds : MonoBehaviour
     }
 
     // Update is called once per frame
-    private float topBound = 40;
-    private float lowerBound = -40;
+    private float topBound = 100;
+    private float lowerBound = -100;
     void Update()
     {
         if (transform.position.z > topBound)

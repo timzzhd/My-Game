@@ -6,13 +6,13 @@ using TMPro;
 public class GameManager1 : MonoBehaviour
 {
     private int score;
-    public TextMeshProUGUI scoreText;
+    public TextMeshProUGUI gameOverText;
 
     // Start is called before the first frame update
     void Start()
     {
-        score = 0;
-        scoreText.text = "Score: " + score;
+       
+        gameOverText.gameObject.SetActive(true);
     }
 
     // Update is called once per frame
@@ -20,4 +20,5 @@ public class GameManager1 : MonoBehaviour
     {
         
     }
+
 }
